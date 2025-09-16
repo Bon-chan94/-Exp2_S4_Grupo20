@@ -1,3 +1,9 @@
+import controller.InventarioController;
+import controller.MenuController;
+import model.Inventario;
+import view.InventarioView;
+import view.MenuView;
+
 public class Main {
     public static void main(String[] args) {
         Inventario modelo = new Inventario();
@@ -7,6 +13,6 @@ public class Main {
         MenuView menuView = new MenuView();
         MenuController menu = new MenuController(menuView, invController);
 
-        menu.run(); // toda la interacción con el usuario es a través de la VISTA
+        menu.run(); // toda la interacción con el usuario es a través de la VISTA
  }
 }
